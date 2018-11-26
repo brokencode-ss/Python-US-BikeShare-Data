@@ -1,10 +1,9 @@
 # Python-US-BikeShare-Data
 
-# Python Script to Explore US Bikeshare Data
-This Python script is used to explore data related to bike share systems for Chicago, New York City, and Washington. It imports data from csv files and compute descriptive statistics from the data.
+This Python script is used to explore data related to bike share systems for Chicago, NYC, and Washington. It imports data from csv files and compute descriptive statistics from the data. With Udacity's permission, the files have been uploaded to the following link: https://drive.google.com/open?id=1tmZPans5NN7Nj2m6XSdFCf5Ooh5_n4Ez
 
-## How to run the script
-You can run the script using a Python integrated development environment (IDE) such as Spyder. To install Spyder, you will need to [download the Anaconda installer](https://www.anaconda.com/download/). This script is written in Python 3, so you will need the Python 3.x version of the installer. After downloading and installing Anaconda, you will find the Spyder IDE by opening Anaconda Navigator.
+## Running the script
+You can run the script using a Python integrated development environment (IDE). This script is written in Python 3, so you will need the Python 3.x version of the IDE.
 
 ## Datasets
 The datasets used for this script contain bike share data for the first six months of 2017.
@@ -15,11 +14,7 @@ The data is provided by [Motivate](https://www.motivateco.com/), which is a bike
 * Trip Duration (in seconds)
 * Start Station
 * End Station
-* User Type (Subscriber or Customer)
-
-The Chicago and New York City files also contain the following two columns:
-* Gender
-* Birth Year
+* User Type
 
 ## Questions explored
 The script answers the following questions about the bike share data:
@@ -33,47 +28,28 @@ The script answers the following questions about the bike share data:
 * What are the counts of gender?
 * What are the earliest (i.e. oldest person), most recent (i.e. youngest person), and most popular birth years?
 
-## Future scopes
-In the future, more functions that compute statistics will be added to answer more questions about the data. The possibilities of improving the interactive experience (e.g turning this script into a web app) will also be explored.
+## Statistics Computed
+The code can provide the following information:
 
-## Resources referred to complete this project
-Use parse_dates to recognize datetime columns:
-* https://stackoverflow.com/questions/21269399/datetime-dtypes-in-pandas-read-csv
-* https://stackoverflow.com/questions/17465045/can-pandas-automatically-recognize-dates
-* https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html
+#1 Popular times of travel (i.e., occurs most often in the start time)
 
-Assess datetime series:
-* https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.html
-* https://stackoverflow.com/questions/29366572/pandas-how-to-filter-most-frequent-datetime-objects
+most common month
+most common day of week
+most common hour of day
 
-Filter date:
-* https://stackoverflow.com/questions/29370057/select-dataframe-rows-between-two-dates
+#2 Popular stations and trip
 
-Check validity of date:
-* https://stackoverflow.com/questions/9987818/in-python-how-to-check-if-a-date-is-valid/9987935
+most common start station
+most common end station
+most common trip from start to end (i.e., most frequent combination of start station and end station)
 
-Add a day to a date:
-* http://www.pressthered.com/adding_dates_and_times_in_python/
+#3 Trip duration
 
-Read day of week, month, hour etc.:
-* https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.html
-* https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.dt.dayofweek.html
+total travel time
+average travel time
 
-Convert seconds to hours, minutes and seconds:
-* https://stackoverflow.com/questions/775049/how-to-convert-seconds-to-hours-minutes-and-seconds
-* https://docs.python.org/3/library/functions.html#divmod
+#4 User info
 
-Convert pandas series or dataframes to string:
-* https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.to_string.html
-* https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_string.html
-
-Concatenate strings of two columns:
-* https://stackoverflow.com/questions/19377969/combine-two-columns-of-text-in-dataframe-in-pandas-python
-* http://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.str.cat.html#pandas.Series.str.cat
-
-Set column widths:
-* https://pandas.pydata.org/pandas-docs/stable/options.html
-* https://pandas.pydata.org/pandas-docs/stable/generated/pandas.set_option.html
-
-Other pandas and numpy functions:
-* Lessons in the Introduction to Data Analysis section of Udacity's Data Aanalyst Nanodegree (DAND)
+counts of each user type
+counts of each gender (only available for NYC and Chicago)
+earliest, most recent, most common year of birth (only available for NYC and Chicago)
