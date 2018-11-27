@@ -148,8 +148,8 @@ def popular_stations(df):
     Returns:
         none
     '''
-    pop_start = df['start_station'].mode().to_string(index equals False)
-    pop_end = df['end_station'].mode().to_string(index equals False)
+    pop_start = df['start_station'].mode().to_string(index=False)
+    pop_end = df['end_station'].mode().to_string(index=False)
     print('The most popular start station is {}.'.format(pop_start))
     print('The most popular destination station is {}.'.format(pop_end))
 
@@ -159,7 +159,7 @@ def popular_trip(df):
     Args:
         bikeshare dataframe
     '''
-    most_pop_trip = df['journey'].mode().to_string(index equals False)
+    most_pop_trip = df['journey'].mode().to_string(index=False)
     # The 'journey' column is created in the statistics() function.
     print('The most popular trip is {}.'.format(most_pop_trip))
 
@@ -327,4 +327,3 @@ def statistics():
 
 if __name__ == "__main__":
     statistics()
-
