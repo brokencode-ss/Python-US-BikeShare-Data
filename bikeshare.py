@@ -248,7 +248,7 @@ def statistics():
     '''
     # Filters the data by city (Chicago, New York, Washington)
     city = get_city()
-    df = pd.read_csv(city, parse_dates equals['Start Time', 'End Time'])
+    df = pd.read_csv(city, parse_dates=['Start Time', 'End Time'])
 
     # change all column names in lowercase and replaces whitespaces with underscores.  # NOQA
     new_labels = []
